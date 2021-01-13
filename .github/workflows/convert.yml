@@ -17,4 +17,10 @@ jobs:
       run:  bash auto.sh
     - name: Delete input
       run: rm -f input
+    - name: deploy
+      run: |
+          git add .
+          git commit -m "update"
+          git push origin test
+
 
