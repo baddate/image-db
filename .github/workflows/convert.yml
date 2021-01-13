@@ -17,8 +17,3 @@ jobs:
       run:  bash auto.sh
     - name: Delete input
       run: rm -f input
-    - name: Push
-      run: |
-          git config --global user.email "badgatex@outlook.com"
-          git config --global user.name "baddate"
-          git add . && git commit -m "update" && git push
