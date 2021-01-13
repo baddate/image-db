@@ -26,13 +26,3 @@ for val in $value; do
         fi
     fi
 done
-
-echo "config\n"
-git config --global user.email "badgatex@outlook.com"
-git config --global user.name "baddate"
-echo "add\n"
-git add .
-echo "commit\n"
-git commit -m "update"
-echo "push\n"
-git push origin test
