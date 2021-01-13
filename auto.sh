@@ -35,4 +35,4 @@ git add .
 echo "commit\n"
 git commit -m "update"
 echo "push\n"
-git push origin master
+git push origin test
