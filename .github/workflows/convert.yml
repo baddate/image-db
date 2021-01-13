@@ -4,7 +4,7 @@ on:
     branches:
       - test
 jobs:
-  build-and-deploy:
+  AUTO:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
@@ -14,7 +14,7 @@ jobs:
     - name: Download script
       run: wget -c https://github.com/baddate/imagedb/blob/dev/auto.sh
     - name: Run script
-      run:  ./auto.sh
+      run:  chmod +x auto.sh && bash auto.sh
     - name: Delete input
       run: rm -f input
 
