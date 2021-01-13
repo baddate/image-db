@@ -2,7 +2,7 @@
 
 # restart
 # if [[ -f "output" || -f "input" ]]; then
-    rm -f output input
+rm -f output input
 # fi
 
 # Assign the filename
