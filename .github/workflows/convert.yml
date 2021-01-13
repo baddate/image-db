@@ -18,8 +18,7 @@ jobs:
     - name: Delete input
       run: rm -f input
     - name: Commit changes
-      run: git add.
-      run: git commit -m "update"
+      run: git add. && git commit -m "update"
     - name: Push changes
       uses: ad-m/github-push-action@master
       with:
