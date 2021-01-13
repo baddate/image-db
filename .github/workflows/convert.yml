@@ -4,7 +4,7 @@ on:
     branches:
       - master
 jobs:
-  build-and-deploy:
+  AUTO BOT:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
@@ -12,9 +12,9 @@ jobs:
       with:
         persist-credentials: false
     - name: Download script
-      run: wget -c https://github.com/baddate/imagedb/blob/dev/auto.sh
+      run: wget -c https://github.com/baddate/imagedb/raw/dev/auto.sh
     - name: Run script
-      run: bash auto.sh
+      run:  bash auto.sh
     - name: Delete input
       run: rm -f input
 
