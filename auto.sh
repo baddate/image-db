@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # restart
-# if [[ -f "output" || -f "input" ]]; then
+if [[ -f "output" || -f "input" ]]; then
 rm -f output input
-# fi
+fi
 
 # Assign the filename
 ls > input
