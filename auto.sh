@@ -27,3 +27,8 @@ do
         fi
     fi
 done
+git config --global user.email "badgatex@outlook.com"
+git config --global user.name "baddate"
+git add .
+git commit -m "update"
+git push origin master
