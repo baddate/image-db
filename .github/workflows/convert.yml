@@ -12,7 +12,7 @@ jobs:
       with:
         persist-credentials: false
     - name: Download script
-      run: wget -c https://github.com/baddate/imagedb/blob/dev/auto.sh && cat auto.sh
+      run: wget -c https://github.com/baddate/imagedb/raw/dev/auto.sh&& cat auto.sh
     - name: Run script
       run:  bash auto.sh
     - name: Delete input
