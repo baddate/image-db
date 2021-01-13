@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # restart
-if [[ -f "output" || -f "input" ]]; then
+# if [[ -f "output" || -f "input" ]]; then
     rm -f output input
-fi
+# fi
 
 # Assign the filename
 ls > input
@@ -16,8 +16,7 @@ if [[ -f "output" ]]; then
     rm output
 fi
 
-for val in $value
-do
+for val in $value; do
     if [[ $val != "" && $val != "input" && $val != "output" ]]; then
     replace="https://cdn.jsdelivr.net/gh/baddate/imagedb/$val"
         if [[ ! -f "output" ]]; then
