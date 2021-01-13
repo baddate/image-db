@@ -1,4 +1,4 @@
-name: Convert Github link to jsdelivr link
+name: auto bot
 on:
   push:
     branches:
