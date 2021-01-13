@@ -18,5 +18,7 @@ jobs:
     - name: Delete input
       run: rm -f input
     - name: Push
-      run: git add . && git commit -m "update" && git push
-
+      run: |
+          git config --global user.email "alexdemail@e.email"
+          git config --global user.name "baddate"
+          git add . && git commit -m "update" && git push
