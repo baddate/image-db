@@ -18,7 +18,7 @@ fi
 
 for val in $value
 do
-    if [[ $val != "" && $val !="input" && $val !="output" ]]; then
+    if [[ $val != "" && $val != "input" && $val != "output" ]]; then
     replace="https://cdn.jsdelivr.net/gh/baddate/imagedb/$val"
         if [[ ! -f "output" ]]; then
         echo "$replace" > output
