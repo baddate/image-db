@@ -17,4 +17,6 @@ jobs:
       run:  bash auto.sh
     - name: Delete input
       run: rm -f input
+    - name: Push
+      run: git add . && git commit -m "update" && git push
 
