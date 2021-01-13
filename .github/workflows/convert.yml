@@ -17,10 +17,9 @@ jobs:
       run:  bash auto.sh
     - name: Delete input
       run: rm -f input
-    - name: deploy
-      run: |
-          git add .
-          git commit -m "update"
-          git push origin test
-
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.TOKENS_IMG }}
+        branch: ${{ github.ref }}
 
