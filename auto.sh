@@ -19,7 +19,7 @@ fi
 for val in $value
 do
     if [[ $val != "" && $val != "input" && $val != "output" ]]; then
-    replace="https://cdn.jsdelivr.net/gh/baddate/imagedb/$val"
+    replace="https://cdn.jsdelivr.net/gh/baddate/imagedb@master/$val"
         if [[ ! -f "output" ]]; then
         echo "$replace" > output
         else
@@ -27,12 +27,12 @@ do
         fi
     fi
 done
-echo "config\n"
+echo "config"
 git config --global user.email "badgatex@outlook.com"
 git config --global user.name "baddate"
-echo "add\n"
+echo "add"
 git add .
-echo "commit\n"
+echo "commit"
 git commit -m "update"
-echo "push\n"
-git push origin test
+echo "push"
+git push origin master
